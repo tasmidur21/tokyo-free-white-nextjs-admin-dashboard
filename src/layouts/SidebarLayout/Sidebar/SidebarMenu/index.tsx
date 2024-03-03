@@ -66,7 +66,7 @@ const SubMenuWrapper = styled(Box)(
           right: ${theme.spacing(3.2)};
 
           .MuiBadge-standard {
-            background: ${theme.colors.primary.main};
+            background: ${theme.sidebar.background};
             font-size: ${theme.typography.pxToRem(10)};
             font-weight: bold;
             text-transform: uppercase;
@@ -76,7 +76,7 @@ const SubMenuWrapper = styled(Box)(
     
         .MuiButton-root {
           display: flex;
-          color: ${theme.colors.alpha.trueWhite[70]};
+          color: ${theme.sidebar.textColor};
           background-color: transparent;
           width: 100%;
           justify-content: flex-start;
@@ -93,13 +93,13 @@ const SubMenuWrapper = styled(Box)(
           }
 
           .MuiButton-startIcon {
-            color: ${theme.colors.alpha.trueWhite[30]};
+            color: ${theme.sidebar.textColor};
             font-size: ${theme.typography.pxToRem(20)};
             margin-right: ${theme.spacing(1)};
           }
           
           .MuiButton-endIcon {
-            color: ${theme.colors.alpha.trueWhite[50]};
+            color: ${theme.sidebar.textColor};
             margin-left: auto;
             opacity: .8;
             font-size: ${theme.typography.pxToRem(20)};
@@ -107,12 +107,12 @@ const SubMenuWrapper = styled(Box)(
 
           &.active,
           &:hover {
-            background-color: ${alpha(theme.colors.alpha.trueWhite[100], 0.06)};
-            color: ${theme.colors.alpha.trueWhite[100]};
+            background-color: ${alpha(theme.sidebar.menuItemBgActive, 0.06)};
+            color: ${theme.sidebar.menuItemColorActive};
 
             .MuiButton-startIcon,
             .MuiButton-endIcon {
-              color: ${theme.colors.alpha.trueWhite[100]};
+              color: ${theme.sidebar.menuItemColorActive};
             }
           }
         }
@@ -161,7 +161,7 @@ const SubMenuWrapper = styled(Box)(
 
               &.active,
               &:hover {
-
+                background: transparent;
                 &:before {
                   transform: scale(1);
                   opacity: 1;

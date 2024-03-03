@@ -10,8 +10,7 @@ interface SidebarLayoutProps {
 }
 
 const SidebarLayout: FC<SidebarLayoutProps> = ({ children }) => {
-  const theme = useTheme();
-
+  const theme = useTheme(); 
   return (
     <>
       <Box

@@ -46,8 +46,7 @@ const ListWrapper = styled(Box)(
                 &:active,
                 &:hover {
                 
-                    background: transparent;
-                
+                    background: ${theme.sidebar.menuItemBgActive};
                     .MuiListItemText-root {
                         .MuiTypography-root {
                             &:before {

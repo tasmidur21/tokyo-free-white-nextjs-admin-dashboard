@@ -9,11 +9,15 @@
     "react-hooks/exhaustive-deps": "off",
     "react/no-unescaped-entities": "off",
     "react/jsx-max-props-per-line": [
-      1,
+      0,
       {
         "maximum": 2,
         "when": "multiline"
       }
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {"ts-ignore": "allow-with-description"}
     ]
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Theme } from '@mui/material';
 import { PureLightTheme } from './schemes/PureLightTheme';
+import { PureDarkTheme } from './schemes/PureDarkTheme';
 import { GreyGooseTheme } from './schemes/GreyGooseTheme';
 import { PurpleFlowTheme } from './schemes/PurpleFlowTheme';
 
@@ -252,6 +253,7 @@ declare module '@mui/material/styles' {
 
 const themeMap: { [key: string]: Theme } = {
   PureLightTheme,
+  PureDarkTheme,
   GreyGooseTheme,
   PurpleFlowTheme
 };
